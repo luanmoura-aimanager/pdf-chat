@@ -6,7 +6,7 @@ import uuid
 
 # ── clients ──────────────────────────────────────────────────────────────
 client = Anthropic()
-chroma_client = chromadb.Client()
+chroma_client = chromadb.EphemeralClient()
 
 # ── helpers ───────────────────────────────────────────────────────────────
 def extract_text_from_pdf(uploaded_file):
